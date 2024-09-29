@@ -9,150 +9,154 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
 `),De(),ki("--back-color",r.heatRgb)("--fore-color",r.textRgb),De(),Xn(" ",r.distanceToTarget," ",r.direction,`
 `),De(2),fn(" ",r.target.notes,`
 `),De(2),fn(" ",r.showDetails?"Hide":"Show",` Details
-`),De(),We("ngIf",r.showDetails))},dependencies:[mn,tr,os],styles:[".meters[_ngcontent-%COMP%]{width:100%;text-align:center;font-size:3rem;padding:20px;box-sizing:border-box;border-radius:8px;margin-bottom:20px;background-color:var(--back-color, lightgray);color:var(--fore-color, black)}"]}));var is=hr;var Yt=gl(og());var Cn=class Cn{constructor(){}sha256(t){return Yt.SHA256(t).toString(Yt.enc.Hex)}encrypt(t,n){return Yt.AES.encrypt(t,n).toString()}decrypt(t,n){return Yt.AES.decrypt(t,n).toString(Yt.enc.Utf8)}};le(Cn,"\u0275fac",function(n){return new(n||Cn)}),le(Cn,"\u0275prov",V({token:Cn,factory:Cn.\u0275fac,providedIn:"root"}));var zs=Cn;function a1(e,t){if(e&1){let n=Mh();ve(0,"div")(1,"input",9,0),zt("keyup.enter",function(){wc(n);let o=Qc(2),i=It();return bc(i.lookupCachet(o.value))}),Ce(),ve(3,"button",10),zt("click",function(){wc(n);let o=Qc(2),i=It();return bc(i.lookupCachet(o.value))}),Te(4," Open "),Ce()()}}function c1(e,t){if(e&1&&ht(0,"app-radar",11),e&2){let n=It();We("target",n.cachet)}}var pr=class pr{constructor(t){this.encryptionService=t;le(this,"title","GeoCachet");le(this,"cachetKey","");le(this,"cachet");le(this,"cachets",{"567526b8a9b40a9e5c88aefac6492d409962114344c8320913041d3c7d4ceb91":" U2FsdGVkX1/1haHrN0/I5Pts18u+rjwJ3mw5ibfy8H6Pac+ULFKtZdlyLgn98cBaqf3fYgpQLpGninUztgAprXI5Zg3sF2MyffaVSaIo5QxXECA0qnHQsHMd8bJHd7Z6V8Z4H6mEJGolwEv5BkpTGQMcBLitVXVq4C2napRPFvo=",neigh:"U2FsdGVkX1+PVHx3AaeoZfctdAPL9ZbL8f6u+mYfTt+ZtySCEuhwxWi4zPx+QaqAIBK6vRdJQYJ/zx8OpRy2hz2livuzHTGusqir35zlJ2WnnTZCtcFr4ITWUDjcYbp5psOxoBWvRw0S6o/xUSUiiw=="})}lookupCachet(t){return Qs(this,null,function*(){let n=(0,ig.default)(t,{strict:!0,lower:!0}),r=this.encryptionService.sha256(n),o=this.cachets[r];o?this.cachet=JSON.parse(this.encryptionService.decrypt(o,r)):console.error("Cachet not found")})}clearCachet(){this.cachet=void 0}};le(pr,"\u0275fac",function(n){return new(n||pr)(bt(zs))}),le(pr,"\u0275cmp",jt({type:pr,selectors:[["app-root"]],standalone:!0,features:[qt],decls:12,vars:3,consts:[["keyInput",""],[1,"main"],[1,"content"],[1,"left-side"],["role","separator","aria-label","Divider",1,"divider"],[1,"right-side"],[4,"ngIf"],[3,"target",4,"ngIf"],[3,"click"],["type","text","placeholder","Enter key",3,"keyup.enter"],["type","submit",3,"click"],[3,"target"]],template:function(n,r){n&1&&(ve(0,"main",1)(1,"div",2)(2,"div",3)(3,"h1"),Te(4),Ce()(),ht(5,"div",4),ve(6,"div",5),Ut(7,a1,5,0,"div",6)(8,c1,1,1,"app-radar",7),ve(9,"button",8),zt("click",function(){return r.clearCachet()}),Te(10,"Clear"),Ce()()()(),ht(11,"router-outlet")),n&2&&(De(4),Kc(r.title),De(3),We("ngIf",!r.cachet),De(),We("ngIf",r.cachet))},dependencies:[zu,is,mn,tr],styles:[`[_nghost-%COMP%] {
-      --bright-blue: oklch(51.01% 0.274 263.83);
-      --electric-violet: oklch(53.18% 0.28 296.97);
-      --french-violet: oklch(47.66% 0.246 305.88);
-      --vivid-pink: oklch(69.02% 0.277 332.77);
-      --hot-red: oklch(61.42% 0.238 15.34);
-      --orange-red: oklch(63.32% 0.24 31.68);
+`),De(),We("ngIf",r.showDetails))},dependencies:[mn,tr,os],styles:[".meters[_ngcontent-%COMP%]{width:100%;text-align:center;font-size:3rem;padding:20px;box-sizing:border-box;border-radius:8px;margin-bottom:20px;background-color:var(--back-color, lightgray);color:var(--fore-color, black)}"]}));var is=hr;var Yt=gl(og());var Cn=class Cn{constructor(){}sha256(t){return Yt.SHA256(t).toString(Yt.enc.Hex)}encrypt(t,n){return Yt.AES.encrypt(t,n).toString()}decrypt(t,n){return Yt.AES.decrypt(t,n).toString(Yt.enc.Utf8)}};le(Cn,"\u0275fac",function(n){return new(n||Cn)}),le(Cn,"\u0275prov",V({token:Cn,factory:Cn.\u0275fac,providedIn:"root"}));var zs=Cn;function a1(e,t){if(e&1){let n=Mh();ve(0,"div")(1,"input",9,0),zt("keyup.enter",function(){wc(n);let o=Qc(2),i=It();return bc(i.lookupCachet(o.value))}),Ce(),ve(3,"button",10),zt("click",function(){wc(n);let o=Qc(2),i=It();return bc(i.lookupCachet(o.value))}),Te(4," Open "),Ce()()}}function c1(e,t){if(e&1&&ht(0,"app-radar",11),e&2){let n=It();We("target",n.cachet)}}var pr=class pr{constructor(t){this.encryptionService=t;le(this,"title","GeoCachet");le(this,"cachetKey","");le(this,"cachet");le(this,"cachets",{"567526b8a9b40a9e5c88aefac6492d409962114344c8320913041d3c7d4ceb91":"U2FsdGVkX1/1haHrN0/I5Pts18u+rjwJ3mw5ibfy8H6Pac+ULFKtZdlyLgn98cBaqf3fYgpQLpGninUztgAprXI5Zg3sF2MyffaVSaIo5QxXECA0qnHQsHMd8bJHd7Z6V8Z4H6mEJGolwEv5BkpTGQMcBLitVXVq4C2napRPFvo=",neigh:"U2FsdGVkX1+PVHx3AaeoZfctdAPL9ZbL8f6u+mYfTt+ZtySCEuhwxWi4zPx+QaqAIBK6vRdJQYJ/zx8OpRy2hz2livuzHTGusqir35zlJ2WnnTZCtcFr4ITWUDjcYbp5psOxoBWvRw0S6o/xUSUiiw=="})}lookupCachet(t){return Qs(this,null,function*(){let n=(0,ig.default)(t,{strict:!0,lower:!0}),r=this.encryptionService.sha256(n),o=this.cachets[r];o?this.cachet=JSON.parse(this.encryptionService.decrypt(o,r)):console.error("Cachet not found")})}clearCachet(){this.cachet=void 0}};le(pr,"\u0275fac",function(n){return new(n||pr)(bt(zs))}),le(pr,"\u0275cmp",jt({type:pr,selectors:[["app-root"]],standalone:!0,features:[qt],decls:12,vars:3,consts:[["keyInput",""],[1,"main"],[1,"content"],[1,"left-side"],["role","separator","aria-label","Divider",1,"divider"],[1,"right-side"],[4,"ngIf"],[3,"target",4,"ngIf"],[3,"click"],["type","text","placeholder","Enter key",1,"cachet-key",3,"keyup.enter"],["type","submit",3,"click"],[3,"target"]],template:function(n,r){n&1&&(ve(0,"main",1)(1,"div",2)(2,"div",3)(3,"h1"),Te(4),Ce()(),ht(5,"div",4),ve(6,"div",5),Ut(7,a1,5,0,"div",6)(8,c1,1,1,"app-radar",7),ve(9,"button",8),zt("click",function(){return r.clearCachet()}),Te(10,"Clear"),Ce()()()(),ht(11,"router-outlet")),n&2&&(De(4),Kc(r.title),De(3),We("ngIf",!r.cachet),De(),We("ngIf",r.cachet))},dependencies:[zu,is,mn,tr],styles:[`[_nghost-%COMP%] {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
 
-      --gray-900: oklch(19.37% 0.006 300.98);
-      --gray-700: oklch(36.98% 0.014 302.71);
-      --gray-400: oklch(70.9% 0.015 304.04);
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
 
-      --red-to-pink-to-purple-vertical-gradient: linear-gradient(
-        180deg,
-        var(--orange-red) 0%,
-        var(--vivid-pink) 50%,
-        var(--electric-violet) 100%
-      );
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
 
-      --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-        90deg,
-        var(--orange-red) 0%,
-        var(--vivid-pink) 50%,
-        var(--electric-violet) 100%
-      );
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
 
-      --pill-accent: var(--bright-blue);
+    --pill-accent: var(--bright-blue);
 
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol";
-      box-sizing: border-box;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-    h1[_ngcontent-%COMP%] {
-      font-size: 2.5rem;
-      color: var(--gray-900);
-      font-weight: 500;
-      line-height: 100%;
-      letter-spacing: -0.125rem;
-      margin: 0;
-      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol";
-    }
+  h1[_ngcontent-%COMP%] {
+    font-size: 2.5rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+  }
 
-    p[_ngcontent-%COMP%] {
-      margin: 0;
-      color: var(--gray-700);
-    }
+  p[_ngcontent-%COMP%] {
+    margin: 0;
+    color: var(--gray-700);
+  }
 
-    main[_ngcontent-%COMP%] {
-      width: 100%;
-      min-height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem;
-      box-sizing: inherit;
-      position: relative;
-    }
+  main[_ngcontent-%COMP%] {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    box-sizing: inherit;
+    position: relative;
+  }
 
+  .content[_ngcontent-%COMP%] {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {
+    margin-top: 1.75rem;
+  }
+
+  .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {
+    margin-top: 1.5rem;
+  }
+
+  .divider[_ngcontent-%COMP%] {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group[_ngcontent-%COMP%] {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill[_ngcontent-%COMP%] {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill[_ngcontent-%COMP%]:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 3), 
+   .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 4), 
+   .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {
+    margin-inline-start: 0.25rem;
+  }
+
+  .cachet-key[_ngcontent-%COMP%] {
+    width: 8rem;
+  }
+
+  @media screen and (max-width: 650px) {
     .content[_ngcontent-%COMP%] {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-
-    .content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {
-      margin-top: 1.75rem;
-    }
-
-    .content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {
-      margin-top: 1.5rem;
+      flex-direction: column;
+      width: max-content;
     }
 
     .divider[_ngcontent-%COMP%] {
-      width: 1px;
-      background: var(--red-to-pink-to-purple-vertical-gradient);
-      margin-inline: 0.5rem;
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
     }
-
-    .pill-group[_ngcontent-%COMP%] {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      flex-wrap: wrap;
-      gap: 1.25rem;
-    }
-
-    .pill[_ngcontent-%COMP%] {
-      display: flex;
-      align-items: center;
-      --pill-accent: var(--bright-blue);
-      background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-      color: var(--pill-accent);
-      padding-inline: 0.75rem;
-      padding-block: 0.375rem;
-      border-radius: 2.75rem;
-      border: 0;
-      transition: background 0.3s ease;
-      font-family: var(--inter-font);
-      font-size: 0.875rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.4rem;
-      letter-spacing: -0.00875rem;
-      text-decoration: none;
-    }
-
-    .pill[_ngcontent-%COMP%]:hover {
-      background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
-    }
-
-    .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 1) {
-      --pill-accent: var(--bright-blue);
-    }
-    .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 2) {
-      --pill-accent: var(--french-violet);
-    }
-    .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 3), 
-   .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 4), 
-   .pill-group[_ngcontent-%COMP%]   .pill[_ngcontent-%COMP%]:nth-child(6n + 5) {
-      --pill-accent: var(--hot-red);
-    }
-
-    .pill-group[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {
-      margin-inline-start: 0.25rem;
-    }
-
-    @media screen and (max-width: 650px) {
-      .content[_ngcontent-%COMP%] {
-        flex-direction: column;
-        width: max-content;
-      }
-
-      .divider[_ngcontent-%COMP%] {
-        height: 1px;
-        width: 100%;
-        background: var(--red-to-pink-to-purple-horizontal-gradient);
-        margin-block: 1.5rem;
-      }
-    }`]}));var qs=pr;o0(qs,z0).catch(e=>console.error(e));
+  }`]}));var qs=pr;o0(qs,z0).catch(e=>console.error(e));
